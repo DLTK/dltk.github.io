@@ -243,7 +243,7 @@ from the disk into memory. To implement a custom reader for your data you can si
 <a class="reference internal" href="../dltk.core.io.html#dltk.core.io.reader.AbstractReader" title="dltk.core.io.reader.AbstractReader"><code class="xref py py-class docutils literal"><span class="pre">AbstractReader</span></code></a> class and overwrite the <code class="docutils literal"><span class="pre">__init__</span></code> and <code class="docutils literal"><span class="pre">_read_sample</span></code> functions. An
 example for a custom reader class is the <code class="docutils literal"><span class="pre">MRBrains</span></code> reader which reads NIFTI files and returns class-balanced patches
 for training a segmentation network.</p>
-<p>This reader doesn’t need to overwrite the <code class="docutils literal"><span class="pre">__init__</span></code> function as there are no additional parameters to store. It then
+<p>This reader doesn&#8217;t need to overwrite the <code class="docutils literal"><span class="pre">__init__</span></code> function as there are no additional parameters to store. It then
 overwrites the <code class="docutils literal"><span class="pre">_read_sample</span></code> function which takes paths of directores with the MRBrains files and reads them with
 <a class="reference external" href="https://itk.org/Wiki/SimpleITK/GettingStarted">SimpleITK</a>.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MRBrainsReader</span><span class="p">(</span><span class="n">AbstractReader</span><span class="p">):</span>

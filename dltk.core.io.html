@@ -252,15 +252,15 @@ Returns an image example array and the corresponding label array.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>image</strong> (<em>np.ndarray</em>) – image to extract class-balanced patches from</li>
-<li><strong>label</strong> (<em>np.ndarray</em>) – labels to use for balancing the classes</li>
-<li><strong>example_size</strong> (<em>list or tuple</em>) – shape of the patches to extract</li>
-<li><strong>n_examples</strong> (<em>int</em>) – number of patches to extract in total</li>
-<li><strong>classes</strong> (<em>int or list or tuple</em>) – number of classes or list of classes to extract</li>
+<li><strong>image</strong> (<em>np.ndarray</em>) &#8211; image to extract class-balanced patches from</li>
+<li><strong>label</strong> (<em>np.ndarray</em>) &#8211; labels to use for balancing the classes</li>
+<li><strong>example_size</strong> (<em>list or tuple</em>) &#8211; shape of the patches to extract</li>
+<li><strong>n_examples</strong> (<em>int</em>) &#8211; number of patches to extract in total</li>
+<li><strong>classes</strong> (<em>int or list or tuple</em>) &#8211; number of classes or list of classes to extract</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">class-balanced patches extracted from bigger images with shape [batch, example_size…, image_channels]</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">class-balanced patches extracted from bigger images with shape [batch, example_size..., image_channels]</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">ex_imgs, ex_lbls</p>
@@ -280,14 +280,14 @@ Returns an image example array and the corresponding label array.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>image_list</strong> (<em>np.ndarray or list or tuple</em>) – image(s) to extract random patches from</li>
-<li><strong>example_size</strong> (<em>list or tuple</em>) – shape of the patches to extract</li>
-<li><strong>n_examples</strong> (<em>int</em>) – number of patches to extract in total</li>
+<li><strong>image_list</strong> (<em>np.ndarray or list or tuple</em>) &#8211; image(s) to extract random patches from</li>
+<li><strong>example_size</strong> (<em>list or tuple</em>) &#8211; shape of the patches to extract</li>
+<li><strong>n_examples</strong> (<em>int</em>) &#8211; number of patches to extract in total</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">random patches extracted from bigger images with same type as image_list with of shape
-[batch, example_size…, image_channels]</p>
+[batch, example_size..., image_channels]</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">examples</p>
@@ -306,8 +306,8 @@ Returns an image example array and the corresponding label array.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>imglist</strong> (<em>np.ndarray or list or tuple</em>) – image(s) to be flipped</li>
-<li><strong>axis</strong> (<em>int</em>) – axis along which to flip the images</li>
+<li><strong>imglist</strong> (<em>np.ndarray or list or tuple</em>) &#8211; image(s) to be flipped</li>
+<li><strong>axis</strong> (<em>int</em>) &#8211; axis along which to flip the images</li>
 </ul>
 </td>
 </tr>
@@ -330,8 +330,8 @@ Returns an image example array and the corresponding label array.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>img</strong> (<em>np.ndarray</em>) – image to add noise to</li>
-<li><strong>sigma</strong> (<em>float</em>) – stddev for normal distribution to generate noise from</li>
+<li><strong>img</strong> (<em>np.ndarray</em>) &#8211; image to add noise to</li>
+<li><strong>sigma</strong> (<em>float</em>) &#8211; stddev for normal distribution to generate noise from</li>
 </ul>
 </td>
 </tr>
@@ -355,8 +355,8 @@ Returns an image example array and the corresponding label array.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>img</strong> (<em>np.ndarray</em>) – image to add noise to</li>
-<li><strong>sigma</strong> (<em>float</em>) – stddev for normal distribution to generate noise from</li>
+<li><strong>img</strong> (<em>np.ndarray</em>) &#8211; image to add noise to</li>
+<li><strong>sigma</strong> (<em>float</em>) &#8211; stddev for normal distribution to generate noise from</li>
 </ul>
 </td>
 </tr>
@@ -382,7 +382,7 @@ Returns an image example array and the corresponding label array.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image</strong> (<em>np.ndarray</em>) – image to be normalised</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image</strong> (<em>np.ndarray</em>) &#8211; image to be normalised</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">normalised image</td>
 </tr>
@@ -401,7 +401,7 @@ Returns an image example array and the corresponding label array.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image</strong> (<em>np.ndarray</em>) – image to be normalised</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image</strong> (<em>np.ndarray</em>) &#8211; image to be normalised</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">normalised image</td>
 </tr>
@@ -421,9 +421,9 @@ Returns an image example array and the corresponding label array.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>image</strong> (<em>np.ndarray</em>) – image to be resized</li>
-<li><strong>img_size</strong> (<em>list or tuple</em>) – new image size</li>
-<li><strong>kwargs</strong> – additional arguments to be passed to np.pad</li>
+<li><strong>image</strong> (<em>np.ndarray</em>) &#8211; image to be resized</li>
+<li><strong>img_size</strong> (<em>list or tuple</em>) &#8211; new image size</li>
+<li><strong>kwargs</strong> &#8211; additional arguments to be passed to np.pad</li>
 </ul>
 </td>
 </tr>
@@ -446,7 +446,7 @@ Returns an image example array and the corresponding label array.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image</strong> (<em>np.ndarray</em>) – image to be whitened</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image</strong> (<em>np.ndarray</em>) &#8211; image to be whitened</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">whitened image</td>
 </tr>
@@ -461,7 +461,7 @@ Returns an image example array and the corresponding label array.</p>
 <span id="dltk-core-io-reader-module"></span><h2>dltk.core.io.reader module<a class="headerlink" href="#module-dltk.core.io.reader" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="dltk.core.io.reader.AbstractReader">
-<em class="property">class </em><code class="descclassname">dltk.core.io.reader.</code><code class="descname">AbstractReader</code><span class="sig-paren">(</span><em>dtypes</em>, <em>dshapes</em>, <em>name=’reader’</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/dltk/core/io/reader.html#AbstractReader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dltk.core.io.reader.AbstractReader" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">dltk.core.io.reader.</code><code class="descname">AbstractReader</code><span class="sig-paren">(</span><em>dtypes</em>, <em>dshapes</em>, <em>name='reader'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/dltk/core/io/reader.html#AbstractReader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dltk.core.io.reader.AbstractReader" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
 <p>Abstract reader</p>
 <p>Abstract reader class for data I/O. Provides the queue handling and wraps the specific reader functions to adapt
@@ -470,7 +470,7 @@ given data types.</p>
 
 <dl class="class">
 <dt id="dltk.core.io.reader.SimpleSITKReader">
-<em class="property">class </em><code class="descclassname">dltk.core.io.reader.</code><code class="descname">SimpleSITKReader</code><span class="sig-paren">(</span><em>dtypes</em>, <em>dshapes</em>, <em>name=’simplesitkreader’</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/dltk/core/io/reader.html#SimpleSITKReader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dltk.core.io.reader.SimpleSITKReader" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">dltk.core.io.reader.</code><code class="descname">SimpleSITKReader</code><span class="sig-paren">(</span><em>dtypes</em>, <em>dshapes</em>, <em>name='simplesitkreader'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/dltk/core/io/reader.html#SimpleSITKReader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dltk.core.io.reader.SimpleSITKReader" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#dltk.core.io.reader.AbstractReader" title="dltk.core.io.reader.AbstractReader"><code class="xref py py-class docutils literal"><span class="pre">dltk.core.io.reader.AbstractReader</span></code></a></p>
 <p>Simple reader class to read sitk files by file path</p>
 </dd></dl>
